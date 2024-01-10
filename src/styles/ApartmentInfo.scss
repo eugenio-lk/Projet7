@@ -1,0 +1,63 @@
+.apartment__box{
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 810px){
+    flex-direction: column;
+  }
+  .apartment__owner{
+    margin-top: 20px;
+    @media screen and (max-width: 810px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  }
+  .apartment__owner__info{
+    display: flex;
+    gap: 10px;
+  } 
+  .apartment__owner__name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 20px;
+    align-self: center;
+    color: #F56C6C;
+  }
+  .apartment__owner__circle img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+  }
+  .apartment__owner__stars{
+    display: flex;
+    font-size: 30px;
+    margin-left: 7px;
+    color: #C4C4C4;
+    .on{
+      color: #F56C6C;;
+    }
+  }
+}
+ .apartment__spans{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  span{
+    background-color: #F56C6C;;
+    color:#F6F6F6;
+    padding: 1px 30px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:560px) {
+      box-sizing: border-box;
+    }
+  }
+  
+}

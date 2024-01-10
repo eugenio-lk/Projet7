@@ -1,0 +1,32 @@
+
+.apartment-page{
+  color: #F56C6C;
+   h1{
+     font-weight:500;
+     margin-bottom: 5px;
+     font-size: 42px;
+     margin-top: 10px;
+     @media screen and (max-width:768px) {
+       font-size: 22px;
+     }
+   }
+   h2{
+     margin-top: 0;
+     font-weight: 400;
+     font-size: 20px;
+   }
+   .apartment__title {
+     color: #F56C6C;
+   }
+   
+   .ApartmentDescriptionTwoBox{
+     display: flex;
+     gap: 20px;
+     list-style-type: none;
+     @media all and (min-width:280px) and (max-width:768px) {
+       flex-direction: column;
+     }
+   }
+   
+ 
+ }

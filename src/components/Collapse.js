@@ -12,12 +12,12 @@ export function ApartmentDescription(props) {
   return (
     <section className="apartment__description">
         <div className="apartment__description__box">
-      <p className="apartment__description__title" onClick={showContent}>
-        <span>{props.title}</span>
-        <i className={chevronClass}></i>
-      </p>
-      <p className={contentClass}>{props.content}</p>
-    </div>
+          <p className="apartment__description__title" onClick={showContent}>
+            <span>{props.title}</span>
+            <i className={chevronClass}></i>
+          </p>
+          <p className={contentClass}>{props.content}</p>
+        </div>
     </section>
     
   );

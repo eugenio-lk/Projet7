@@ -13,4 +13,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomePage; // Export du composant par défaut. Peut être importé et utilisé ailleurs dans l'application.

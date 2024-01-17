@@ -5,24 +5,23 @@ import data from "../data/db.json"
 
 
 
-const Cards = () => {
+const ApartmentGrid = () => {
     return (
         <div className="grid">
 
-            
+            {/*La méthode map pour parcourir les données de l'appartement */}
             {data.map((record) => {
                 const { id, cover, title } = record;
 
                 // affiche la fiche logement sur la page d'accueil
                 return (
-                    
-                        <ApartmentCard key = {id} id = {id} title ={title} imageUrl= {cover}/>
-                        
-                    
+                    // On extrait l'id, le title, la cover et l'image url pour chaque appartement, ils auront des données spécifiques grace a la key.
+                    // Donc toutes ces données sont passées a ApartementCard
+                    <ApartmentCard key = {id} id = {id} title ={title} imageUrl= {cover}/>        
                 )
             })}
         </div>
     )
 }
 
-export default Cards
+export default ApartmentGrid
